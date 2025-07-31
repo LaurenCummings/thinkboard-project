@@ -8,8 +8,11 @@ app.get("/api/notes", (req, res) => {
 
 app.post("/api/notes", (req, res) => {
     res.status(201).json({message:"post created successfully!"})
-})
+});
 
+app.put("/api/notes", (req, res) => {
+    res.status(200).json({message:"post updated successfully!"})
+});
 
 app.listen(5001, () => {
     console.log("Server started on PORT: 5001");
