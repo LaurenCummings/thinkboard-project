@@ -10,12 +10,12 @@ router.post("/", (req, res) => {
     res.status(201).json({message:"Note created successfully!"})
 });
 
-export default router;
-
-
-app.put("/api/notes/:id", (req, res) => {
+router.put("/:id", (req, res) => {
     res.status(200).json({message:"Note updated successfully!"})
 });
+
+export default router;
+
 
 app.delete("/api/notes/:id", (req, res) => {
     res.status(200).json({message:"Note deleted successfully!"})
