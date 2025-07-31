@@ -10,7 +10,7 @@ app.post("/api/notes", (req, res) => {
     res.status(201).json({message:"post created successfully!"})
 });
 
-app.put("/api/notes", (req, res) => {
+app.put("/api/notes/:id", (req, res) => {
     res.status(200).json({message:"post updated successfully!"})
 });
 
