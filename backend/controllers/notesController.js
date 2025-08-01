@@ -5,3 +5,7 @@ export function getAllNotes(req, res) {
 export function createNote(req, res) {
     res.status(201).json({message:"Note created successfully!"})
 };
+
+export function updateNote(req, res) {
+    res.status(200).json({message:"Note updated successfully!"})
+};
