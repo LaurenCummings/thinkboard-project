@@ -12,7 +12,7 @@ export async function getAllNotes(req, res) {
 
 export async function createNote(req, res) {
     try {
-        const {title, content} = req.body;
+        const { title, content } = req.body;
         const note = new Note({ title, content });
 
         const savedNote = await note.save();
@@ -25,7 +25,9 @@ export async function createNote(req, res) {
 
 export async function updateNote(req, res) {
     try {
-
+        const { title, content } = req.body;
+        await Note.findByIdAndUpdate(req.params.id, { title, content });
+        res.status(200).json({ message: "Note updated successfully" })
     } catch (error) {
 
     }
