@@ -11,7 +11,7 @@ export async function getAllNotes(req, res) {
 };
 
 export function createNote(req, res) {
-    res.status(201).json({message:"Note created successfully!"})
+    
 };
 
 export function updateNote(req, res) {
