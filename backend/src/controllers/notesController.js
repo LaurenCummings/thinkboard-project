@@ -12,9 +12,10 @@ export async function getAllNotes(req, res) {
 
 export async function createNote(req, res) {
     try {
-
+        const {title, content} = req.body;
+        const newNote = new Note({title, content})
     } catch (error) {
-        
+
     }
 };
 
