@@ -23,8 +23,12 @@ export async function createNote(req, res) {
     }
 };
 
-export function updateNote(req, res) {
-    
+export async function updateNote(req, res) {
+    try {
+
+    } catch (error) {
+
+    }
 };
 
 export function deleteNote(req, res) {
