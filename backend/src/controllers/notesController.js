@@ -13,7 +13,10 @@ export async function getAllNotes(req, res) {
 export async function createNote(req, res) {
     try {
         const {title, content} = req.body;
-        const newNote = new Note({title, content})
+        const newNote = new Note({title, content});
+
+        await newNote.save();
+        res.status(201).json({message:"Note created successfully"})
     } catch (error) {
 
     }
