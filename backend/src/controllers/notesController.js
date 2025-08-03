@@ -24,7 +24,7 @@ export async function createNote(req, res) {
 };
 
 export function updateNote(req, res) {
-    res.status(200).json({message:"Note updated successfully!"})
+    
 };
 
 export function deleteNote(req, res) {
