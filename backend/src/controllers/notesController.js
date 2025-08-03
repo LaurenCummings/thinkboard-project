@@ -10,8 +10,12 @@ export async function getAllNotes(req, res) {
     }
 };
 
-export function createNote(req, res) {
-    
+export async function createNote(req, res) {
+    try {
+
+    } catch (error) {
+        
+    }
 };
 
 export function updateNote(req, res) {
