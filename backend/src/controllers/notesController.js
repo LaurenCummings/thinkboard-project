@@ -39,5 +39,5 @@ export async function updateNote(req, res) {
 };
 
 export function deleteNote(req, res) {
-    res.status(200).json({message:"Note deleted successfully!"})
+    
 };
