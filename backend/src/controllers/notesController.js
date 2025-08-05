@@ -38,6 +38,7 @@ export async function updateNote(req, res) {
     }
 };
 
-export function deleteNote(req, res) {
-    
+export async function deleteNote(req, res) {
+    const deletedNote = await Note.findByIdAndDelete(req.params.id);
+
 };
