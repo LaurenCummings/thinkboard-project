@@ -6,12 +6,17 @@ export async function getAllNotes(req, res) {
         res.status(200).json(notes);
     } catch (error) {
         console.error("Error in getAllNotes controller", error);
-        res.status(500).json({ message:"Internal server error" })
+        res.status(500).json({ message: "Internal server error" });
     }
 };
 
 export async function getNoteByid(req, res) {
+    try {
 
+    } catch (error) {
+        console.error("Error in getNoteById controller", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
 };
 
 export async function createNote(req, res) {
