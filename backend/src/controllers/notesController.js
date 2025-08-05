@@ -10,9 +10,9 @@ export async function getAllNotes(req, res) {
     }
 };
 
-export async function getNoteByid(req, res) {
+export async function getNoteById(req, res) {
     try {
-
+        const note = await Note.find()
     } catch (error) {
         console.error("Error in getNoteById controller", error);
         res.status(500).json({ message: "Internal server error" });
