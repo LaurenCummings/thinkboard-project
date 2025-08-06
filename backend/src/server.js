@@ -11,7 +11,12 @@ const PORT = process.env.PORT || 5001;
 connectDB();
 
 // middleware
-app.use(express.json())
+app.use(express.json());
+
+app.use((req, res, next) => {
+    console.log("We just got a new req");
+    next();
+})
 
 app.use("/api/notes", notesRoutes);
 
