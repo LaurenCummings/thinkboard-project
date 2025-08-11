@@ -6,6 +6,7 @@ import NoteDetailPage from "./pages/NoteDetailPage";
 const App = () => {
   return (
     <div>
+      <button className="btn btn-outline">click me</button>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
