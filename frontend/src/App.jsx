@@ -5,7 +5,7 @@ import NoteDetailPage from "./pages/NoteDetailPage";
 
 const App = () => {
   return (
-    <div data-theme="coffee">
+    <div data-theme="forest">
       <button className="btn btn-neutral">Neutral</button>
       <button className="btn btn-primary">Primary</button>
       <button className="btn btn-secondary">Secondary</button>
