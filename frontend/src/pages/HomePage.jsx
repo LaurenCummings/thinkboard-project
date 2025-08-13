@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import RateLimitedUI from "../components/RateLimitedUI";
+import axios from "axios";
 
 function HomePage() {
   const [isRateLimited, setIsRateLimited] = useState(true);
