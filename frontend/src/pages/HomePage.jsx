@@ -13,6 +13,8 @@ function HomePage() {
       try{
         const res = await axios.get("http://localhost:5001/api/notes");
         console.log(res.data);
+        setNotes(res.data);
+        setIsRateLimited(false);
       } catch (error) {
         console.log("Error fetching notes");
       }
