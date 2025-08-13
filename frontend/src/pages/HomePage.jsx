@@ -17,7 +17,8 @@ function HomePage() {
         console.log("Error fetching notes");
       }
     }
-  })
+    fetchNotes();
+  });
 
   return (
     <div className="min-h-screen">
