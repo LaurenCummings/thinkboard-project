@@ -2,11 +2,13 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 function HomePage() {
-  const [rateLimited, setRateLimited] = useState(false);
-  
+  const [isRateLimited, setIsRateLimited] = useState(false);
+
   return (
     <div className="min-h-screen">
       <Navbar />
+
+      { isRateLimited && <RateLimitedUI /> }
     </div>
   )
 }
