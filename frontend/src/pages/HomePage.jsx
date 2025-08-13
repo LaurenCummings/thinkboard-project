@@ -5,6 +5,7 @@ import RateLimitedUI from "../components/RateLimitedUI";
 function HomePage() {
   const [isRateLimited, setIsRateLimited] = useState(true);
   const [notes, setNotes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   return (
     <div className="min-h-screen">
