@@ -23,6 +23,8 @@ function HomePage() {
         } else {
           toast.error("Failed to load notes");
         }
+      } finally {
+        setLoading(false);
       }
     }
     fetchNotes();
