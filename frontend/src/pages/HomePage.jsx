@@ -4,7 +4,7 @@ import RateLimitedUI from "../components/RateLimitedUI";
 import axios from "axios";
 
 function HomePage() {
-  const [isRateLimited, setIsRateLimited] = useState(true);
+  const [isRateLimited, setIsRateLimited] = useState(false);
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(true);
 
