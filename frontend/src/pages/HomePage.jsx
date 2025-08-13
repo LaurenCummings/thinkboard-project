@@ -29,7 +29,7 @@ function HomePage() {
       }
     }
     fetchNotes();
-  });
+  }, []);
 
   return (
     <div className="min-h-screen">
