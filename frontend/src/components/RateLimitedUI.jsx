@@ -1,3 +1,4 @@
+import { ZapIcon } from "lucide-react";
 
 function RateLimitedUI() {
   return (
