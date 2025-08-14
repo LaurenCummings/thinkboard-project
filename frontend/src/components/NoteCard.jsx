@@ -13,8 +13,8 @@ function NoteCard({ note }) {
                 </span>
                 <div className="flex items-center gap-1">
                     <PenSquareIcon className="size-4" />
-                    <button>
-                        <Trash2Icon />
+                    <button className="btn btn-ghost">
+                        <Trash2Icon className="size-4" />
                     </button>
                 </div>
 
