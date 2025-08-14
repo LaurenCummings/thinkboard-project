@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { PenSquareIcon } from "lucide-react";
+import { PenSquareIcon, Trash2Icon } from "lucide-react";
 
 function NoteCard({ note }) {
   return (
@@ -13,6 +13,9 @@ function NoteCard({ note }) {
                 </span>
                 <div className="flex items-center gap-1">
                     <PenSquareIcon className="size-4" />
+                    <button>
+                        <Trash2Icon />
+                    </button>
                 </div>
 
             </div>
