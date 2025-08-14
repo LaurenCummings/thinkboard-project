@@ -1,6 +1,8 @@
-function NoteCard() {
+import { Link } from "react-router";
+
+function NoteCard({ note }) {
   return (
-    <div>NoteCard</div>
+    <Link to={`/note/${note._id}`}>NoteCard</Link>
   )
 }
 
