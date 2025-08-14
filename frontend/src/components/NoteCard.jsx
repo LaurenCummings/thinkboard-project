@@ -12,7 +12,7 @@ function NoteCard({ note }) {
                     {note.createdAt}
                 </span>
                 <div className="flex items-center gap-1">
-
+                    <PenSquareIcon className="size-4" />
                 </div>
 
             </div>
