@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { PenSquareIcon } from "lucide-react";
 
 function NoteCard({ note }) {
   return (
@@ -10,6 +11,9 @@ function NoteCard({ note }) {
                 <span className="text-sm text-base-content/60">
                     {note.createdAt}
                 </span>
+                <div className="flex items-center gap-1">
+
+                </div>
 
             </div>
         </div>
