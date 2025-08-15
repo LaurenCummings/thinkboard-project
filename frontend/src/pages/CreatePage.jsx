@@ -5,6 +5,10 @@ function CreatePage() {
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
 
+  function handleSubmit() {
+    
+  }
+
   return (
     <div>CreatePage</div>
   )
