@@ -7,8 +7,10 @@ function CreatePage() {
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
 
-  function handleSubmit() {
-
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(title);
+    console.log(content);
   }
 
   return (
