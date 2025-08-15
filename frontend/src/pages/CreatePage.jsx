@@ -35,6 +35,11 @@ function CreatePage() {
                     onChange={(e) => setTitle(e.target.value)}
                   />
                 </div>
+                <div className="form-control mb-4">
+                  <label className="label">
+                    <span className="label-text">Content</span>
+                  </label>
+                </div>
               </form>
             </div>
           </div>
