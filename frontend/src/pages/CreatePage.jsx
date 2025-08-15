@@ -27,6 +27,13 @@ function CreatePage() {
                   <label className="label">
                     <span className="label-text">Title</span>
                   </label>
+                  <input 
+                    type="text"
+                    placeholder="Note Title"
+                    className="input input-bordered"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                  />
                 </div>
               </form>
             </div>
