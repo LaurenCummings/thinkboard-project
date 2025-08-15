@@ -46,6 +46,11 @@ function CreatePage() {
                     onChange={(e) => setContent(e.target.value)}
                   />
                 </div>
+                <div className="card-actions justify-end">
+                  <button type="submit" className="btn btn-primary" disabled={loading}>
+                    { loading ? "Creating..." : "Create Note" }
+                  </button>
+                </div>
               </form>
             </div>
           </div>
