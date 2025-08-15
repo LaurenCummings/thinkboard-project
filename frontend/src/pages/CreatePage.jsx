@@ -9,8 +9,11 @@ function CreatePage() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(title);
-    console.log(content);
+    
+    if(!title.trim() || !content.trim()) {
+      toast.error("All fields are required");
+      return;
+    }
   }
 
   return (
