@@ -27,6 +27,7 @@ function CreatePage() {
       toast.success("Note created successfully!");
       navigate("/");
     } catch (error) {
+      console.log("Error creating note", error);
       toast.error("Failed to create note");
     } finally {
       setLoading(false);
