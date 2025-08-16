@@ -17,8 +17,12 @@ function CreatePage() {
     }
 
     setLoading(true);
-    
-  }
+    try {
+
+    } catch (error) {
+
+    }
+  };
 
   return (
     <div className="min-h-screen bg-base-200">
