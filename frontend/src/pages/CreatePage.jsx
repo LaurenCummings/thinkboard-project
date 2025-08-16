@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Navigate } from "react-router";
+import { Link } from "react-router";
 import { ArrowLeftIcon } from "lucide-react";
 import toast from "react-hot-toast";
 
@@ -23,7 +23,7 @@ function CreatePage() {
         content
       })
       toast.success("Note created successfully!");
-      Navigate("/");
+      navigate("/");
     } catch (error) {
 
     } finally {
