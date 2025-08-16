@@ -32,6 +32,7 @@ function CreatePage() {
       if (error.response.status === 429) {
         toast.error("Slow down! You are creating notes too fast", {
           duration: 4000,
+          icon: "💀",
         });
       }
       toast.error("Failed to create note");
