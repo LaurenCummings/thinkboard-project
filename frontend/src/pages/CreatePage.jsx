@@ -22,6 +22,7 @@ function CreatePage() {
         title,
         content
       })
+      toast.success("Note created successfully!");
     } catch (error) {
 
     } finally {
