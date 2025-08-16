@@ -8,7 +8,7 @@ function CreatePage() {
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     
     if(!title.trim() || !content.trim()) {
@@ -18,7 +18,10 @@ function CreatePage() {
 
     setLoading(true);
     try {
-
+      await axios.post("http://localhost:5001/api/notes", {
+        title,
+        content
+      })
     } catch (error) {
 
     } finally {
