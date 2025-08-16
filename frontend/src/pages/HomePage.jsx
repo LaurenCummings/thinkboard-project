@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import RateLimitedUI from "../components/RateLimitedUI";
 import NoteCard from "../components/NoteCard";
-import axios from "axios";
+import api from "../lib/axios";
 import toast from "react-hot-toast";
 
 function HomePage() {
