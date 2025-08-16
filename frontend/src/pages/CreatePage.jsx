@@ -15,6 +15,9 @@ function CreatePage() {
       toast.error("All fields are required");
       return;
     }
+
+    setLoading(true);
+    
   }
 
   return (
