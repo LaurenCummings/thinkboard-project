@@ -21,6 +21,8 @@ function CreatePage() {
 
     } catch (error) {
 
+    } finally {
+      setLoading(false);
     }
   };
 
