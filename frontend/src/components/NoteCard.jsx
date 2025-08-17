@@ -12,7 +12,8 @@ function NoteCard({ note }) {
         if (!window.confirm("Are you sure you want to delete this note?")) return;
 
         try {
-            await api.delete(`/notes/${id}`)
+            await api.delete(`/notes/${id}`);
+            toast.success("Note deleted successfully");
         } catch (error) {
 
         }
