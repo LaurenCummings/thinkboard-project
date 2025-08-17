@@ -5,7 +5,9 @@ import { formatDate } from "../lib/utils";
 function NoteCard({ note }) {
 
     function handleDelete(e, id) {
-        e.preventDefault(); //get rid of navigation behavior
+        e.preventDefault(); // get rid of navigation behavior
+
+        if (!window.confirm("Are you sure you want to delete this note?")) return;
     }
 
     return (
