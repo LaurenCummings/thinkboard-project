@@ -15,7 +15,8 @@ function NoteCard({ note }) {
             await api.delete(`/notes/${id}`);
             toast.success("Note deleted successfully");
         } catch (error) {
-
+            console.log("Error in handleDelete", error);
+            toast.error("Failed to delete note");
         }
     };
 
