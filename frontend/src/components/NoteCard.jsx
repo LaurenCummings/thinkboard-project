@@ -8,7 +8,13 @@ function NoteCard({ note }) {
         e.preventDefault(); // get rid of navigation behavior
 
         if (!window.confirm("Are you sure you want to delete this note?")) return;
-    }
+
+        try {
+
+        } catch (error) {
+
+        }
+    };
 
     return (
         <Link to={`/note/${note._id}`} className="card bg-base-100 hover:shadow-lg transition-all duration-200 border-t-4 border-solid border-[#00FF9D]">
