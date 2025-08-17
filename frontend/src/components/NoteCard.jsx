@@ -1,16 +1,17 @@
 import { Link } from "react-router";
 import { PenSquareIcon, Trash2Icon } from "lucide-react";
 import { formatDate } from "../lib/utils";
+import api from "../lib/axios";
 
 function NoteCard({ note }) {
 
-    function handleDelete(e, id) {
+    async function handleDelete(e, id) {
         e.preventDefault(); // get rid of navigation behavior
 
         if (!window.confirm("Are you sure you want to delete this note?")) return;
 
         try {
-
+            await api.delete(`/notes/${id}`)
         } catch (error) {
 
         }
