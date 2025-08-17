@@ -5,7 +5,7 @@ import { formatDate } from "../lib/utils";
 function NoteCard({ note }) {
 
     function handleDelete(e, id) {
-
+        e.preventDefault(); //get rid of navigation behavior
     }
 
     return (
