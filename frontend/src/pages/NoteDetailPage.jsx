@@ -43,7 +43,10 @@ function NoteDetailPage() {
   }
 
   function handleSave() {
-
+    if (!note.title.trim() || !note.content.trim()) {
+      toast.error("Please add a title and content");
+      return;
+    }
   }
 
   if (loading) {
