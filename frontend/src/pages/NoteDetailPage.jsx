@@ -37,7 +37,8 @@ function NoteDetailPage() {
       toast.success("Note deleted");
       navigate("/");
     } catch (error) {
-
+      console.log("Error deleting the note:", error);
+      toast.error("Failed to delete note");
     }
   }
 
