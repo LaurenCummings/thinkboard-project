@@ -31,6 +31,12 @@ function NoteDetailPage() {
 
   function handleDelete() {
     if (!window.confirm("Are you sure you want to delete this note?")) return;
+
+    try {
+
+    } catch (error) {
+      
+    }
   }
 
   function handleSave() {
