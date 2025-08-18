@@ -44,8 +44,13 @@ function NoteDetailPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-6">
           <Link to="/" className="btn btn-ghost">
-          
+            <ArrowLeftIcon className="size-5" />
+            Back to Notes
           </Link>
+          <button onClick={handleDelete} className="btn btn-error btn-outline">
+            <Trash2Icon className="size-5" />
+            Delete Note
+          </button>
         </div>
       </div>
     </div>
