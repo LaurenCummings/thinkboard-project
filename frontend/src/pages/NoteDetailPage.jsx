@@ -12,7 +12,13 @@ function NoteDetailPage() {
 
   useEffect(() => {
     const fetchNote = async() => {
+      try {
 
+      } catch (error) {
+
+      } finally {
+        setLoading(false);
+      }
     }
 
     fetchNote();
