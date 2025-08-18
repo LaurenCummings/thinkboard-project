@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router";
 import api from "../lib/axios";
 import toast from "react-hot-toast";
+import { LoaderIcon } from "lucide-react";
 
 function NoteDetailPage() {
   const [note, setNote] = useState(null);
@@ -33,7 +34,7 @@ function NoteDetailPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-base-200 flex items-center justify-center">
-        
+
       </div>
     );
   }
