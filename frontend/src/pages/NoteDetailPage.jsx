@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
 
 function NoteDetailPage() {
@@ -10,7 +10,6 @@ function NoteDetailPage() {
 
   const { id } = useParams();
 
-  console.log({id});
 
   return (
     <div>NoteDetailPage</div>
