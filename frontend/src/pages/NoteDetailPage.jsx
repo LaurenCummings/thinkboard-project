@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router";
 import api from "../lib/axios";
 import toast from "react-hot-toast";
-import { LoaderIcon, Trash2Icon } from "lucide-react";
+import { LoaderIcon, ArrowLeftIcon, Trash2Icon } from "lucide-react";
 
 function NoteDetailPage() {
   const [note, setNote] = useState(null);
