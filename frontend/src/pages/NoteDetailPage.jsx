@@ -80,6 +80,11 @@ function NoteDetailPage() {
                   onChange={(e) => setNote({ ...note, content: e.target.value })}
                 />
               </div>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary" disabled={saving}>
+
+                </button>
+              </div>
             </div>
           </div>     
         </div>
