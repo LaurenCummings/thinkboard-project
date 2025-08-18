@@ -47,7 +47,17 @@ function NoteDetailPage() {
       toast.error("Please add a title and content");
       return;
     }
-  }
+
+    setSaving(true);
+
+    try {
+
+    } catch (error) {
+
+    } finally {
+      setSaving(false);
+    }
+  };
 
   if (loading) {
     return (
