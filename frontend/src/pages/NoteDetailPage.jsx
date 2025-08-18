@@ -30,7 +30,7 @@ function NoteDetailPage() {
   }, [id]);
 
   function handleDelete() {
-    if (!window.confrim("Are you sure you want to delete this note?")) return;
+    if (!window.confirm("Are you sure you want to delete this note?")) return;
   }
 
   function handleSave() {
