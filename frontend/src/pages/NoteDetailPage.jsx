@@ -29,13 +29,15 @@ function NoteDetailPage() {
     fetchNote();
   }, [id]);
 
-  function handleDelete() {
+  async function handleDelete() {
     if (!window.confirm("Are you sure you want to delete this note?")) return;
 
     try {
-
+      await api.delete(`/notes/${id}`);
+      toast.success("Note deleted");
+      navigate("/");
     } catch (error) {
-      
+
     }
   }
 
