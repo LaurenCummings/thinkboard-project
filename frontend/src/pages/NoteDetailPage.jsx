@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams, Link } from "react-router";
 import api from "../lib/axios";
 import toast from "react-hot-toast";
-import { LoaderIcon } from "lucide-react";
+import { LoaderIcon, Trash2Icon } from "lucide-react";
 
 function NoteDetailPage() {
   const [note, setNote] = useState(null);
@@ -40,7 +40,11 @@ function NoteDetailPage() {
   }
 
   return (
-    <div>NoteDetailPage</div>
+    <div>
+      <div>
+
+      </div>
+    </div>
   )
 }
 
