@@ -29,7 +29,9 @@ function NoteDetailPage() {
     fetchNote();
   }, [id]);
 
-  console.log({note})
+  function handleDelete() {
+    
+  }
 
   if (loading) {
     return (
