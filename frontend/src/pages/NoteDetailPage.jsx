@@ -8,6 +8,8 @@ function NoteDetailPage() {
 
   const navigate = useNavigate();
 
+  const { id } = useParams();
+
   return (
     <div>NoteDetailPage</div>
   )
