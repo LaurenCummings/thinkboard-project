@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 
 function NoteDetailPage() {
   const [note, setNote] = useState(null);
@@ -9,6 +9,8 @@ function NoteDetailPage() {
   const navigate = useNavigate();
 
   const { id } = useParams();
+
+  console.log({id});
 
   return (
     <div>NoteDetailPage</div>
