@@ -34,7 +34,7 @@ function NoteDetailPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-base-200 flex items-center justify-center">
-
+        <LoaderIcon className="animate-spin size-10" />
       </div>
     );
   }
