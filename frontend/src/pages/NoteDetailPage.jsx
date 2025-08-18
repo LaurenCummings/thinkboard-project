@@ -42,7 +42,7 @@ function NoteDetailPage() {
     }
   }
 
-  function handleSave() {
+  async function handleSave() {
     if (!note.title.trim() || !note.content.trim()) {
       toast.error("Please add a title and content");
       return;
@@ -51,7 +51,8 @@ function NoteDetailPage() {
     setSaving(true);
 
     try {
-
+      await api.put(`/notes/${id}`, note);
+      toast.success("Note updated successfully");
     } catch (error) {
 
     } finally {
