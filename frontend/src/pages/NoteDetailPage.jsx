@@ -30,7 +30,7 @@ function NoteDetailPage() {
   }, [id]);
 
   function handleDelete() {
-
+    if (!window.confrim("Are you sure you want to delete this note?")) return;
   }
 
   function handleSave() {
@@ -86,7 +86,7 @@ function NoteDetailPage() {
               </div>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary" disabled={saving} onClick={handleSave}>
-                  { saving ? "Saving..." : "Save changes" }
+                  { saving ? "Saving..." : "Save Changes" }
                 </button>
               </div>
             </div>
