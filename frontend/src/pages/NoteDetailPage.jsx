@@ -54,7 +54,12 @@ function NoteDetailPage() {
               <Trash2Icon className="size-5" />
               Delete Note
             </button>
-          </div>          
+          </div>     
+          <div className="card bg-base-100">
+            <div className="card-body">
+              
+            </div>
+          </div>     
         </div>
       </div>
     </div>
