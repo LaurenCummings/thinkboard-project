@@ -33,6 +33,10 @@ function NoteDetailPage() {
 
   }
 
+  function handleSave() {
+    
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-base-200 flex items-center justify-center">
@@ -81,7 +85,7 @@ function NoteDetailPage() {
                 />
               </div>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary" disabled={saving}>
+                <button className="btn btn-primary" disabled={saving} onClick={handleSave}>
 
                 </button>
               </div>
