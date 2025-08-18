@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
+import api from '../lib/axios';
 
 function NoteDetailPage() {
   const [note, setNote] = useState(null);
@@ -13,6 +14,7 @@ function NoteDetailPage() {
   useEffect(() => {
     const fetchNote = async() => {
       try {
+        const res = await api.get(`/notes/${id}`);
 
       } catch (error) {
 
