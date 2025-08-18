@@ -10,6 +10,13 @@ function NoteDetailPage() {
 
   const { id } = useParams();
 
+  useEffect(() => {
+    const fetchNote = async() => {
+
+    }
+
+    fetchNote();
+  }, [id]);
 
   return (
     <div>NoteDetailPage</div>
