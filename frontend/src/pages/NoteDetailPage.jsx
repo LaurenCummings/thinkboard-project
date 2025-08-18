@@ -34,7 +34,7 @@ function NoteDetailPage() {
   }
 
   function handleSave() {
-    
+
   }
 
   if (loading) {
@@ -86,7 +86,7 @@ function NoteDetailPage() {
               </div>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary" disabled={saving} onClick={handleSave}>
-
+                  { saving ? "Saving..." : "Save changes" }
                 </button>
               </div>
             </div>
