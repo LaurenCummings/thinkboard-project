@@ -27,7 +27,7 @@ app.use(rateLimiter);
 
 app.use("/api/notes", notesRoutes);
 
-app.use(express.static(path.join()))
+app.use(express.static(path.join(__dirname, "../frontend/dist")))
 
 connectDB().then(() => {
     app.listen(PORT, () => {
