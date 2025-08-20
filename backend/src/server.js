@@ -10,6 +10,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+const __dirname = path.resolve();
 
 // middleware
 app.use(cors({
@@ -25,6 +26,8 @@ app.use(rateLimiter);
 // });
 
 app.use("/api/notes", notesRoutes);
+
+app.use(express.static(path.join()))
 
 connectDB().then(() => {
     app.listen(PORT, () => {
