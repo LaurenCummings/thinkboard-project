@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
 import CreatePage from "./pages/CreatePage";
 import NoteDetailPage from "./pages/NoteDetailPage";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
