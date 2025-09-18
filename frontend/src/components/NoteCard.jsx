@@ -38,7 +38,7 @@ function NoteCard({ note, setNotes }) {
               className="btn btn-ghost btn-xs text-error"
               onClick={(e) => handleDelete(e, note._id)}
             >
-              <Trash2Icon className="size-4" />
+              <Trash2Icon className="size-4 text-red-950" />
             </button>
           </div>
         </div>
