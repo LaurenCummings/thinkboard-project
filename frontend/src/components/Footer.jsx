@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-base-content p-5">
+    <div className="text-base-content p-5 text-right">
       <a target="_blank" href="https://icons8.com/icon/9_NQcM4E-KeP/pencil">
         Pencil
       </a>{" "}
