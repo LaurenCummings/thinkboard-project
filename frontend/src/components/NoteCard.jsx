@@ -26,7 +26,7 @@ function NoteCard({ note, setNotes }) {
       className="card hover:shadow-lg transition-all duration-200 bg-[url('/paper.jpg')]"
     >
       <div className="card-body">
-        <h3 className="card-title text-black">{note.title}</h3>
+        <h3 className="card-title text-base-content">{note.title}</h3>
         <p className="text-base-content/70 line-clamp-3">{note.cotent}</p>
         <div className="card-actions justify-between items-center mt-4">
           <span className="text-sm text-base-content/60">
